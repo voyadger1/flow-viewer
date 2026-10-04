@@ -11,6 +11,12 @@ COPY packages/shared/package.json ./packages/shared/
 COPY apps/frontend/package.json ./apps/frontend/
 COPY apps/backend/package.json ./apps/backend/
 
+ARG VITE_API_HOST
+ARG VITE_WS_HOST
+
+ENV VITE_API_HOST=$VITE_API_HOST
+ENV VITE_WS_HOST=$VITE_WS_HOST
+
 # 2. Install ALL dependencies (including dev dependencies for the build).
 RUN npm ci
 
