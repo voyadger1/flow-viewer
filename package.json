@@ -1,0 +1,32 @@
+{
+  "name": "flowviewer",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "author": "Alexey Kucherenko",
+  "description": "A platform for real-time visualization, monitoring, and analysis of nextflow pipeline execution.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build:shared": "npm run build -w @flowviewer/shared",
+    "dev:all": "npm-run-all --parallel dev:backend dev:frontend",
+    "dev:frontend": "npm run build:shared && npm run dev -w @flowviewer/frontend",
+    "dev:backend": "npm run build:shared && npm run start:dev -w @flowviewer/backend",
+    "build:frontend": "npm run build:shared && npm run build -w @flowviewer/frontend",
+    "build:backend": "npm run build:shared && npm run build -w @flowviewer/backend",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "format": "npm run format --workspaces --if-present",
+    "format:check": "npm run format:check --workspaces --if-present"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "cross-env": "^10.1.0"
+  }
+}

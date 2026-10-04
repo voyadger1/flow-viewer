@@ -1,0 +1,6 @@
+[data-slot="code"], [data-slot="code"] > code {
+    margin: 0 !important;
+    font-size: 10pt !important;
+    font-family: 'JetBrainsMono', sans-serif !important;
+    background: var(--background-code) !important;
+}

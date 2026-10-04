@@ -1,0 +1,13 @@
+{
+  "name": "@flowviewer/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "prettier": ">=3.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@flowviewer/eslint-config": "^1.0.0"
+  }
+}
