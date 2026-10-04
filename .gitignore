@@ -28,5 +28,5 @@ dist-electron
 *storybook.log
 storybook-static
 
-data
-docs
+/data
+/docs
