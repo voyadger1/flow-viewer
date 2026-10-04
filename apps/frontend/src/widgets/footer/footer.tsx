@@ -1,6 +1,12 @@
 import { cn } from '@/shared/lib/utils.ts';
 import { FooterBlock } from '@/widgets/footer/ui/footer-block.tsx';
-import { GitHubIcon, NextFlowIcon, TelegramIcon, XTwitterIcon } from '@/shared/assets/icons';
+import {
+  DockerIcon,
+  GitHubIcon,
+  NextFlowIcon,
+  TelegramIcon,
+  XTwitterIcon,
+} from '@/shared/assets/icons';
 import { BookOpenIcon, MailIcon, MonitorCogIcon } from 'lucide-react';
 
 export const Footer = () => {
@@ -24,36 +30,36 @@ export const Footer = () => {
 
         <div className={'flex-1'} />
 
-        {/*<FooterBlock*/}
-        {/*  title={'Store'}*/}
-        {/*  items={[*/}
-        {/*    {*/}
-        {/*      title: 'NextFlow plugin',*/}
-        {/*      src: 'https://registry.nextflow.io/plugins',*/}
-        {/*      icon: <NextFlowIcon />,*/}
-        {/*      newTab: true,*/}
-        {/*    },*/}
-        {/*    {*/}
-        {/*      title: 'WebView',*/}
-        {/*      src: 'https://hub.docker.com/r/nextflow/nextflow',*/}
-        {/*      icon: <DockerIcon />,*/}
-        {/*      newTab: true,*/}
-        {/*    },*/}
-        {/*  ]}*/}
-        {/*/>*/}
+        <FooterBlock
+          title={'Store'}
+          items={[
+            // {
+            //   title: 'NextFlow plugin',
+            //   src: 'https://registry.nextflow.io/plugins',
+            //   icon: <NextFlowIcon />,
+            //   newTab: true,
+            // },
+            {
+              title: 'WebView',
+              src: 'https://hub.docker.com/r/voyadger1/flow-viewer',
+              icon: <DockerIcon />,
+              newTab: true,
+            },
+          ]}
+        />
 
         <FooterBlock
           title={'Development'}
           items={[
-            {
-              title: 'NextFlow plugin',
-              src: '#',
-              icon: <GitHubIcon />,
-              newTab: true,
-            },
+            // {
+            //   title: 'NextFlow plugin',
+            //   src: '#',
+            //   icon: <GitHubIcon />,
+            //   newTab: true,
+            // },
             {
               title: 'WebView',
-              src: '#',
+              src: 'https://github.com/voyadger1/flow-viewer/tree/master',
               icon: <GitHubIcon />,
               newTab: true,
             },
