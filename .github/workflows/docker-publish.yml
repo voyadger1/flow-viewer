@@ -32,14 +32,12 @@ jobs:
         with:
           images: ${{ env.DOCKER_IMAGE }}
           tags: |
-            # Для тега v1.0.0 создаём: 1.0.0, 1.0, 1, latest
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
             
-            # Для push в main создаём: latest и sha-abc1234
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
-            type=sha,prefix=,format=short,enable=${{ github.ref == 'refs/heads/main' }}
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/master' }}
+            type=sha,prefix=,format=short,enable=${{ github.ref == 'refs/heads/master' }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
