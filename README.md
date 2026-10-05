@@ -36,7 +36,11 @@ When launching, you need to expose port `3000` — this is the port the applicat
 
 To avoid data loss when restarting the image, you need to map the database directory from the container to the host system. The data folder inside the container is located at `/data`.
 
----
+## Documentation
+* [About](apps/frontend/public/docs/about.md)
+* [Web View](apps/frontend/public/docs/web-view.md)
+* [nf-plugin](apps/frontend/public/docs/nf-plugin.md)
+* [API](apps/frontend/public/docs/api.md)
 
 ## Contact
 
