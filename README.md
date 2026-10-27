@@ -42,6 +42,12 @@ To avoid data loss when restarting the image, you need to map the database direc
 * [nf-plugin](apps/frontend/public/docs/nf-plugin.md)
 * [API](apps/frontend/public/docs/api.md)
 
+## Links
+
+* [Docker image](https://hub.docker.com/repository/docker/voyadger1/flow-viewer/general)
+* [NextFlow registry](https://registry.nextflow.io/plugins/nf-flowviewer)
+* [nf-flowviewer Github](https://github.com/voyadger1/nf-flowviewer)
+
 ## Contact
 
 You can contact me to collaborate on a project. I am open to job offers.
