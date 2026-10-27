@@ -33,12 +33,12 @@ export const Footer = () => {
         <FooterBlock
           title={'Store'}
           items={[
-            // {
-            //   title: 'NextFlow plugin',
-            //   src: 'https://registry.nextflow.io/plugins',
-            //   icon: <NextFlowIcon />,
-            //   newTab: true,
-            // },
+            {
+              title: 'NextFlow plugin',
+              src: 'https://registry.nextflow.io/plugins/nf-flowviewer',
+              icon: <NextFlowIcon />,
+              newTab: true,
+            },
             {
               title: 'WebView',
               src: 'https://hub.docker.com/r/voyadger1/flow-viewer',
@@ -51,12 +51,12 @@ export const Footer = () => {
         <FooterBlock
           title={'Development'}
           items={[
-            // {
-            //   title: 'NextFlow plugin',
-            //   src: '#',
-            //   icon: <GitHubIcon />,
-            //   newTab: true,
-            // },
+            {
+              title: 'NextFlow plugin',
+              src: 'https://github.com/voyadger1/nf-flowviewer',
+              icon: <GitHubIcon />,
+              newTab: true,
+            },
             {
               title: 'WebView',
               src: 'https://github.com/voyadger1/flow-viewer/tree/master',
