@@ -3,7 +3,7 @@
 # FlowViewer
 
 [![Docker](https://img.shields.io/badge/docker-ready-blue?logo=docker&logoColor=white)](https://www.docker.com/)
-[![Nextflow](https://img.shields.io/badge/nextflow-≥23.04.0-brightgreen?logo=nextflow&logoColor=white)](https://www.nextflow.io/)
+[![Nextflow](https://img.shields.io/badge/nextflow-≥23.04.0-brightgreen?logo=nextflow&logoColor=white&colorB=58bd9f)](https://www.nextflow.io/)
 [![API](https://img.shields.io/badge/API-REST-blue?logo=swagger&logoColor=white)](./api)
 [![Node.js](https://img.shields.io/badge/node-≥24.0.0-green?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
